@@ -1,6 +1,6 @@
 // start of the app
 const appContainer = document.querySelector('.app-container');
-
+const clearButton = document.querySelector('.clear')
 // function to create a divs for the grids
 function makeDivs() {
     let totalDivs = 16 * 16
@@ -15,3 +15,11 @@ function makeDivs() {
 }
 
 makeDivs();
+
+clearButton.addEventListener('click', () => {
+    const sketchDivs = appContainer.querySelectorAll('div');
+    sketchDivs.forEach(sketchDiv => {
+        sketchDiv.style.backgroundColor = "white";
+    })
+    const userNumber = prompt('Number of squares per side? **Maximum is 100** ');
+})

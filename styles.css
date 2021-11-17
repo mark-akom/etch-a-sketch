@@ -11,6 +11,7 @@ body {
 .heading {
     text-align: center;
     padding: 16px 0;
+    padding-bottom: 0;
 }
 
 .app-container {
@@ -21,4 +22,11 @@ body {
     display: grid;
     grid-template-columns: repeat(16, auto);
     grid-template-rows: repeat(16, auto);
+}
+
+.clear {
+    display: block;
+    margin: 16px auto;
+    padding: 4px 16px;
+    font-size: 16px;
 }
