@@ -7,6 +7,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 40px 0;
+    background-color: lightgray;
 }
 
 .heading {
@@ -18,9 +19,12 @@ body {
 .app-container {
     width: 550px;
     height: 550px;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     display: grid;
+    background-color: white;
     /* grid-template-columns: repeat(16, auto);
     grid-template-rows: repeat(16, auto); */
 }
