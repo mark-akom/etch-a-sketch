@@ -1,0 +1,1 @@
+This project is a Etch A Sketch app which uses the DOM something new which I just learnt. 
