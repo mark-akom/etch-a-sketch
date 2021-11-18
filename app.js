@@ -2,7 +2,9 @@
 const appContainer = document.querySelector('.app-container');
 const clearButton = document.querySelector('.clear');
 const rgbButton = document.querySelector('.rgb-color');
+const eraserButton = document.querySelector('.eraser');
 let rgbColor = false;
+let eraser = false;
 let innerDivs;
 
 
@@ -37,6 +39,11 @@ function changeBackground(e) {
         return;
     }
 
+    if (eraser) {
+        e.target.style.backgroundColor = 'white';
+        return;
+    }
+
     e.target.style.backgroundColor = 'black';
 }
 
@@ -46,6 +53,12 @@ makeDivs();
 // event listeners
 rgbButton.addEventListener('click', () => {
     rgbColor = true;
+    eraser = false;
+});
+
+eraserButton.addEventListener('click', () => {
+    eraser = true;
+    rgbColor = false;
 })
 
 clearButton.addEventListener('click', () => {
